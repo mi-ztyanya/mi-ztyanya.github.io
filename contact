@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ミ・ズターニャのホームページ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>お問い合わせ</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">追加予定</a></li>
+                <li><a href="game.html">追加予定</a></li>
+                <li><a href="404.html">追加予定</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>連絡先情報</h2>
+            <p>すべての連絡に反応するとは限りません。</p>
+            <p>いかなる損害についても、私は責任を負いません。</p>
+            <p>外部リンク</p>
+            <hr>
+            <p><a href="https://twitter.com/miki24408416136">X</a></p>
+            <p><a href="https://zenn.dev/mi_ztyanya?tab=books">Zenn</a></p>
+            <hr>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 ミ・ズターニャ</p>
+    </footer>
+</body>
+</html>
