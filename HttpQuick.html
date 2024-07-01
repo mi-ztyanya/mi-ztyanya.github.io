@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - ミ・ズターニャのホームページ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>プロジェクト</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="404.html">Projects</a></li>
+                <li><a href="404.html">Download</a></li>
+                <li><a href="404.html">Documentation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>HttpQuick</h2>
+            <p>コマンドラインからhttpファイルを読み込みHTTPリクエストを簡単に行うツールです。HTTPファイルを指定し、リクエストを実行します。</p>
+            <p>対象ユーザー: コマンドラインユーザー、サーバーにアクセスしてテストを行いたい人</p>
+            <p>開発背景: 頼まれたので作成した自動化ツールです。</p>
+            <p>バッチファイル等のスクリプトを用意し実行することも可能です。</p>
+        </section>
+        <section>
+            <h2>使用方法</h2>
+            <p>以下は簡単な使用例です。</p>
+            <br>
+            <div class="box">
+                <pre><code>
+                    ファイル:test.http
+                    GET {{access_url}}/user/userlist/json
+                    ###
+                    GET {{access_url}}/user/data
+                    Name: Alice
+                    Data: {{data_type}}
+                </code></pre>
+                <hr><br>
+                <pre><code>
+                    ファイル:.env.json
+                    {
+                        "access_url": "localhost"
+                        "data_type": "Age"
+                    }
+                </code></pre>
+                <hr><br>
+                <pre><code>
+                    コンソール上
+                    HttpQuick test.http
+                </code></pre>
+                <hr><br>
+            </div>
+            <p>{{トークン名}}としておくと、.env.jsonから読み込んでリプレスして解釈します。</p>
+            <h2>主要なコマンドや機能:</h2>
+            <ul>
+                <li>実行例: <code>HttpQuick test.http</code></li>
+                <li>別のフォルダに出力(先にフォルダを作成してください): <code>HttpQuick test.http ./response</code></li>
+                <li>ファイル名に日付を追加(出力先指定とは順不同): <code>HttpQuick test.http -d ./response</code></li>
+                <li>ヘルプを表示: <code>HttpQuick -h</code></li>
+            </ul>
+        </section>
+        <section>
+            <h2>インストール方法</h2>
+            <p>---!注意! いかなる損害についても、私は責任を負いません。自己責任でご利用ください。---</p>
+            <p>ツールはPyPIからインストールできます。</p>
+            <div class="box">
+                <pre><code>
+                    pip install [ツール名未定]
+                </code></pre>
+            </div>
+            <p>PyPIリンク: [後で追加するため、コメント]</p>
+        </section>
+        <br>
+        <br>
+    </main>
+    <footer>
+        <p>© 2024 ミ・ズターニャ</p>
+    </footer>
+</body>
+</html>
