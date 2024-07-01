@@ -1,0 +1,121 @@
+/* ベーススタイル */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFF8E7; /* パステルオレンジの背景 */
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダーとナビゲーション */
+header {
+    background-color: #FFCC99; /* 温かみのあるオレンジ */
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FF6600; /* ホバー時に少し濃いオレンジ */
+}
+
+/* メインコンテンツ */
+main {
+    padding: 20px;
+}
+
+/* フッター */
+footer {
+    background-color: #FFCC99;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    color: #FFF;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* セクション */
+section {
+    margin: 20px 0;
+}
+
+section h2 {
+    color: #FF6600; /* 温かみのある濃いオレンジ */
+}
+
+section p {
+    font-size: 1.1em;
+}
+
+/* コードブロック */
+pre {
+    background-color: #FFF2CC; /* 薄いオレンジの背景 */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    overflow-x: auto;
+}
+.box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em
+}
+
+/* div {
+    background-color: #FFF2CC;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    align-self: center;
+    overflow-x: auto;
+}
+
+.box {
+    background-color: #FFF2CC;
+    display: grid;
+    align-items: start;
+    align-self: center;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+.box :first-child {
+align-self: center;
+text-align: center;
+} */
+
+code {
+    color: #FF6600;
+    font-family: 'Courier New', Courier, monospace;
+    align-self: center;
+    text-align: center;
+}
